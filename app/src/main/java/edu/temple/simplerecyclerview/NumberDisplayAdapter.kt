@@ -21,7 +21,8 @@ class NumberDisplayAdapter (private val numbers: IntArray): RecyclerView.Adapter
     }
 
     override fun onBindViewHolder(holder: NumberViewHolder, position: Int) {
-
+        holder.textView.text = numbers[position].toString()
+        holder.textView.textSize = numbers[position].toFloat()
     }
 
     // TODO Step 3b: Complete function definitions for adapter
